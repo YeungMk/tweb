@@ -1,0 +1,255 @@
+/* 设置页面主体样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置页眉样式 */
+header {
+    background-image: url(/img/sky1.jpg);
+    background-position:right top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+
+    color: white;
+    text-align: center;
+}
+
+.aa
+{
+	width:auto;
+	animation:first 3s; /* 使用 first 动画，持续 3 秒 */
+	-webkit-animation:first 3s; 
+    animation-iteration-count:infinite; /* 动画无限循环 */
+    animation-direction:alternate;/* 循环方向交替 */
+}
+
+@keyframes first
+{
+    0%   {color:lightskyblue;}
+    
+    100% {color:white;}
+}
+ 
+@-webkit-keyframes first /* Safari 与 Chrome */
+{
+    0%   {color:lightskyblue;}
+    
+    100% {color:white;}
+}
+
+
+.mar{
+    margin: 40px;
+}
+
+/*主页按钮效果*/
+.tra {
+    width: 100px;
+    height: 23px;
+    margin-bottom: 3px;
+    background:rgb(12, 109, 219);
+    transition-property: width;
+    transition-duration: 2s;
+  }
+.tra:hover {
+    width: 300px;
+}
+
+.back{
+    width: 1500px;
+    height: 40px;
+    background:#333;
+
+}
+
+.trb {
+    width: 100px;
+    height: 23px;
+    margin-bottom: 3px;
+    
+    transition-property: width;
+    transition-duration: 2s;
+  }
+.trb:hover {
+    width: 300px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px 100px;
+    
+}
+
+nav ul li a {
+    /* color: white; */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a{
+    color:whitesmoke ;
+    text-decoration:none;
+}
+
+/* 设置文章段落样式 */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* 设置轮播图容器样式 */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow:hidden;
+}
+
+/* 设置轮播图幻灯片样式 */
+.carousel-slide {
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 设置轮播图图片样式 */
+.carousel-slide img {
+    width: 100%;
+    height: 500px; /* 固定图片高度 */
+    object-fit:cover; /* 保持图片比例并裁剪 */
+    border-radius: 10px;
+}
+
+/* 设置轮播图按钮 */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 30px;
+    user-select: none;
+}
+/* 左按钮 */
+.carousel-button.prev {
+    left: 10px;
+}
+/* 右按钮 */
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.attraction {
+    margin: 20px 0;
+}
+
+.attraction img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.click-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.image-container:hover .click-box {
+    bottom: 40px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.subscribe {
+    margin-top: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/*订阅按钮*/
+.subscribe button {
+    padding: 10px 20px;
+    border: none;
+    background-color:blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.subscribe button:hover {
+    background-color:cornflowerblue;
+}
+
+/*底部布景*/
+.unb{
+    background-color:#555;
+    color: aliceblue;
+    background: size 100px;;
+}
+
+/*返回顶部*/
+#myBtn {
+    display: none; /* 默认隐藏 */
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: red; /* 设置背景颜色，你可以设置自己想要的颜色或图片 */
+    color: white; /* 文本颜色 */
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; /* 圆角 */
+}
+#myBtn:hover {
+    background-color: #555; 
+}
+
